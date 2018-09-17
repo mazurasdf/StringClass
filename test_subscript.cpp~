@@ -1,0 +1,18 @@
+#include <iostream>
+#incloude "string.hpp"
+
+//CONST AND NON-CONST SUBSCRIPT OPERATOR OVERLOADERS
+
+int main()
+{
+  String nonConst("nonConst");
+  const String Const("Const");
+
+  std::cout << "call non const..." << std::endl;
+  nonConst[1];
+
+  std::cout << "call const..." << std::endl;
+  Const[1];
+
+  std::cout << ":D yay! Done testing subscript operators" << std::endl;
+}

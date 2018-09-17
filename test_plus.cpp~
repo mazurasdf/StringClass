@@ -1,0 +1,41 @@
+#include <iostream>
+#include <cassert>
+#include "string.hpp"
+
+//PLUS OVERLOADERS
+
+int main()
+{
+  //string and string
+  {
+    String left("Drake&");
+    String right("Josh");
+
+    assert("Drake&Josh" == (left + right));
+  }
+
+  //char[] and string
+  {
+    String island(", Kate!");
+
+    assert("We have to go back, Kate!" == ("We have to go back" + island));
+  }
+
+  //char and string
+  {
+    String incomplete("ppend");
+
+    assert("Append" == ('A' + incomplete));
+  }
+
+  //plus equals
+  {
+    String left("pb and ");
+    String right("jelly");
+
+    left += right;
+    
+    assert("pb and jelly" == left);
+  }
+  std::cout << ":D yay! Done testing plus operator" << std::endl;
+}

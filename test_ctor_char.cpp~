@@ -1,0 +1,9 @@
+#include <iostream>
+#include "string.hpp"
+
+//CHAR CONSTRUCTOR
+
+int main()
+{
+  
+}
